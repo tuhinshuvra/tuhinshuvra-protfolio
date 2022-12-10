@@ -58,9 +58,9 @@
 					<ul class="anchor_nav">
 						<li><a href="#home">Home</a></li>
 						<li><a href="#about">About</a></li>
+						<li><a href="./resume/tuhinshuvra-resume-fullstack.pdf" target="_blank">Download Resume</a></li>
 						<li><a href="#services">Services</a></li>
-						<li><a href="#portfolio">Portfolio</a></li>
-						<!-- <li><a href="#news">News</a></li> -->
+						<li><a href="#portfolio">Projects</a></li>
 						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</div>
@@ -81,9 +81,10 @@
 						<ul class="anchor_nav">
 							<li><a href="#home">Home</a></li>
 							<li><a href="#about">About</a></li>
+							<li><a href="./resume/tuhinshuvra-resume-fullstack.pdf" target="_blank">MY Resume</a>
 							<li><a href="#services">Services</a></li>
-							<li><a href="#portfolio">Portfolio</a></li>
-							<!-- <li><a href="#news">News</a></li> -->
+							<li><a href="#portfolio">Projects</a></li>
+							</li>
 							<li><a href="#contact">Contact</a></li>
 						</ul>
 					</div>
@@ -120,8 +121,8 @@
 								</div>
 								<div class="content hero">
 									<div class="inner_content">
-										<div class="image_wrap">
-											<!-- <img src="img/hero/img.jpg" alt="" /> -->
+										<div class=" d-none d-lg-block ">
+											<img src="img/hero/mern-image.png" alt="" />
 										</div>
 										<div class="name_holder">
 											<h3>Tuhin <span>Shuvra</span></h3>
@@ -130,8 +131,15 @@
 											<p>I'm a <span class="shuvra_tm_animation_text_word"></span>
 												Web Developer
 											</p>
+
 										</div>
+
+
+
+										<h2>This is test</h2>
 									</div>
+								</div>
+								<div>
 								</div>
 								<div class="shuvra_tm_arrow_wrap bounce anchor">
 									<a href="#about"><i class="xcon-angle-double-down"></i></a>
@@ -169,14 +177,12 @@
 													Developer</h4>
 											</div>
 											<div class="definition">
-												<p>Hi! My name is <strong>Tuhin Shuvra</strong>. I am a full-stack Web
-													Developer, and I'm very passionate and dedicated to my work. With
-													many years of experience as a professional Web Developer. I have
-													acquired the skills and necessary knowledge to make your project to
-													success. I enjoy every step of the design and development process
-													from discussion and collaboration to concept and execution but I
-													find the most satisfaction in seeing the finished product do
-													everything for you that it was created to do.</p>
+												<p>Hi! My name is <strong>Tuhin Shuvra</strong>. I am a passionate
+													MERN-Stack Web Developer. I have the knowledge and experience to
+													make a project successful. I enjoy every step of the design and
+													development process from discussion and collaboration to concept and
+													execution but I find the most satisfaction in seeing the finished
+													product do everything for you that it was created to do</p>
 											</div>
 											<div class="about_short_contact_wrap">
 												<ul>
@@ -676,56 +682,42 @@
 									</div>
 									<div class="rightbox">
 										<div class="shuvra_tm_contact_wrap">
-											<div class="main_input_wrap">
-												<!-- <form onsubmit="sendEmail()" class="contact_form" id="contact_form">
-													<div class="returnmessage"
-														data-success="Your message has been received, We will contact you soon.">
-													</div>
-													<div class="empty_notice"><span>Please Fill Required Fields</span>
-													</div>
-													<div class="wrap">
-														<input id="name" type="text" placeholder="Your Name">
-													</div>
-													<div class="wrap">
-														<input id="email" type="email" placeholder="Your Email">
-													</div>
-													<div class="wrap">
-														<textarea id="message" rows="4"
-															placeholder="Your Message"></textarea>
-													</div>
-													<button type="submit" class=" btn btn-primary">Send
-														Message</button>
-													 <div class="shuvra_tm_button">
-														<a id="send_message" href="tuhinshuvra18@gmail.com"><span>Send
-																Message</span></a>
-													</div> -->
+											<form>
+												<div class="main_input_wrap">
+													<div class="col-md-6">
+														<div class="mb-3">
+															<label for="name" class=" form-label fw-bold">Name</label>
+															<input type="text"
+																class="form-control border-secondary rounded-2"
+																id="name" placeholder="Enter name" required />
+														</div>
 
-												<div class="col-md-6 border-left py-3">
-													<div class="form-group">
-														<h5 for="name">Name</h5>
-														<input type="text" class="form-control" id="name"
-															placeholder="Enter name" />
-													</div>
-													<div class="form-group">
-														<h5 for="email">Email</h5>
-														<input type="email" class="form-control" id="email"
-															placeholder="Enter email" />
-													</div>
+														<div class="mb-3">
+															<label for="email" class=" form-label fw-bold">Email</label>
+															<input type="email"
+																class="form-control border-secondary rounded-2"
+																id="email" placeholder="Enter email address" required />
+														</div>
 
-													<div class="form-group">
-														<h5 for="phone">Phone</h5>
-														<input type="text" class="form-control" id="phone"
-															placeholder="Enter Phone" />
-													</div>
+														<div class="mb-3">
+															<label for="phone" class=" form-label fw-bold">Phone</label>
+															<input type="text"
+																class="form-control border-secondary rounded-2"
+																id="phone" placeholder="Enter Phone Number" />
+														</div>
 
-													<div class="form-group">
-														<h5 for="message">Message</h5>
-														<textarea class="form-control" id="message" rows="3"></textarea>
+														<div class="mb-3">
+															<label for="message"
+																class=" form-label fw-bold">Message</label>
+															<textarea name="message"
+																class="form-control border-secondary rounded-2"
+																id="message" rows="2" required></textarea>
+														</div>
+														<button id="sumbit-btn" type="submit"
+															class="btn btn-sm btn-primary float-right"
+															onclick=sendEmail()>Submit</button>
 													</div>
-													<button class="btn btn-primary"
-														onclick="sendEmail()">Submit</button>
 												</div>
-											</div>
 											</form>
 										</div>
 									</div>
@@ -752,6 +744,7 @@
 	<!-- / WRAPPER ALL -->
 
 	<!-- SCRIPTS -->
+	<script></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="js/jquery.js"></script>
 	<script src="https://smtpjs.com/v3/smtp.js"></script>
@@ -762,8 +755,8 @@
 			emailjs.init("DJ8AsoxAOARaD82rA");
 		})();
 	</script>
-	<script src="./js/index.js"></script>
 	<script src="js/plugins.js"></script>
+	<script src="js/index.js"></script>
 	<script src="js/init.js"></script>
 	<!-- /SCRIPTS -->
 </body>

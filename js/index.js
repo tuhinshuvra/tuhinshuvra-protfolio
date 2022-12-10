@@ -8,6 +8,7 @@ function sendEmail() {
         message: document.getElementById("message").value,
 
     };
+
     const serviceID = "service_k8x2mok";
     const templateID = "template_zxf5x8d";
 
@@ -22,4 +23,5 @@ function sendEmail() {
             alert("Your message send successfully")
         })
         .catch((error) => console.log(error));
+
 }
